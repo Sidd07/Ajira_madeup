@@ -1,0 +1,119 @@
+// navbar css
+*{
+   text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+   background: #ffffff;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD; ;
+}
+
+.nav .left-nav{
+  padding:0;
+  margin:0;
+  float:left
+}
+label.logo{
+  background:#E10000 ;
+  color: white !important;
+  font-size: 20px;
+  padding: 0.5rem 0.5rem 2rem 0.5rem !important;
+  margin-left: 40px; 
+  font-weight: bolder;
+}
+.nav ul.right-nav{
+  float: right;
+  padding:0;
+  margin:0 20px 0 0;
+}
+
+.nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+.nav ul li a{
+  color: #444444 ;
+  font-size: 17px;        
+  padding: 7px 20px;
+  border-radius: 3px;
+}
+.nav ul.left-nav li a{
+  color: #444444;
+  font-size: 17px;
+  padding: 7px 24px;
+  border-radius: 3px;
+}
+
+.nav .left-nav .active, .nav .left-nav .active:hover{
+  transition: .5s; 
+  color: #E10000;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #444444;
+  float: right;
+  line-height: 70px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 20px;
+    margin-left:20px
+  }
+  .nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    position: relative;
+    z-index: 999;
+  }
+  ul.left-nav{
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background: #ffffff;
+    z-index:10;
+    right:-100%;
+    border-left: 1px solid #DDDDDD;
+    text-align: center;
+    transition: all .5s;
+  }
+  .nav ul.left-nav li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    right: 0;
+  }
+
+  .display-none{
+    display: none !important;
+  }
+}
+section{  
+  background-size: cover;
+  height: calc(100vh - 70px);
+}

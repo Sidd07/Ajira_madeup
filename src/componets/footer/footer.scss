@@ -1,0 +1,115 @@
+.footer1 {
+  margin-top: 50px;
+  background-size: cover;
+  background: #2193b0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100% 100%;
+  height: 400px;
+  position: relative;
+
+  .locate-us {
+    position: absolute;
+    padding:10px;
+    bottom: -5px;
+    right: 30px;
+    background-color: #444444;
+    color:#ffffff; 
+    font-size:15px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+}
+
+.footer2 {
+  position: relative;
+  background-color: #333333;
+  bottom: 0;
+  margin: 0;
+  padding: 3rem 0rem;
+
+  
+  a {
+    padding: 10px 0px;
+    text-decoration: none;
+    color: #bbbbbb;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 3;
+  }
+  label {
+    padding: 10px;
+    text-decoration: none;
+    color: #bbbbbb;
+    font-size: 1rem;
+    line-height: 3;
+  }
+
+  p {
+    text-decoration: none;
+    color: #bbbbbb;
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+  .social-media {
+    margin-top: 30px;
+    padding: 20px;
+    text-decoration: none;
+    color: #bbbbbb;
+    font-size: 2rem;
+    line-height: 2;
+  }
+  .contact {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #bbbbbb;    
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
+
+ul.float-right li {
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .footer1{
+      .locate-us {
+        left: 42%;
+        right: 100px;
+      }
+  }  
+  .footer2 {
+    .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .block {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    ul.float-none {
+      float: none;
+    }
+    ul.float-right li {
+      padding: 10px 0px;
+      text-align: center;
+    }
+    .text-none {
+      text-align: center;
+    }
+    
+  .logo {
+    margin-left: 30px;
+  }
+  }
+}

@@ -1,0 +1,15 @@
+.slider{
+    overflow: auto;
+    white-space: nowrap;
+
+    .block-20{
+        display: inline-block;
+    }
+}
+
+.Product-image{
+    background: #e10000;  /* fallback for old browsers */    
+    height: 200px;
+    width: 200px;
+   
+}
