@@ -2,22 +2,21 @@ body {
   font-family: "Jost", sans-serif;
 }
 .site-blocks-cover {
-  background-size: cover;
-  background: #56ccf2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #2f80ed,
-    #56ccf2
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #2f80ed,
-    #56ccf2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 100% 100%;
-  min-height: 600px;
+  background-repeat: no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/images/site-cover.png);
+  background-size: 100% auto;
+  height: 600px;
   position: relative;
 }
+
+.site-block-1 {
+  background-repeat: no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/images/group_1.png);
+  background-size: 100% auto;
+  height: 600px;
+  position: relative;
+}
+
 /* text styles */
 h1 {
   font-weight: 400;
@@ -138,20 +137,19 @@ input {
 .border-bottom{
   border-bottom:1px solid #444444;
 }
-.image-gallery {
+.image-gallery-1 {
   background-size: cover;
   background: #a8ff78; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #78ffd6,
-    #a8ff78
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #78ffd6,
-    #a8ff78
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 100% 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)), url(../assets/images/group_2.png);
+  background-size: 100% auto;
+  min-height: 295px;
+  position: relative;
+}
+.image-gallery-2{
+  background-size: cover;
+  background: #a8ff78; /* fallback for old browsers */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)), url(../assets/images/group_3.png);
+  background-size: 100% auto;
   min-height: 295px;
   position: relative;
 }
@@ -416,5 +414,36 @@ padding-top:0px !important;
   }
   .sm-m-0 {
     margin: 0px !important;
+  }
+  .site-blocks-cover {
+    background-repeat: no-repeat;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/images/mobile-site-cover.png);
+      background-size: 100% auto;
+      min-height: 700px;
+      position: relative;
+  }
+  .site-block-1 {
+    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)), url(../assets/images/group_1.png);
+    background-size: 100% auto;
+    height: 400px;
+    position: relative;
+  }
+
+  .image-gallery-1 {
+    background-size: cover;
+    background: #a8ff78; /* fallback for old browsers */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)), url(../assets/images/group_2.png);
+    background-size: 100% auto;
+    min-height: 200px;
+    position: relative;
+  }
+  .image-gallery-2{
+    background-size: cover;
+    background: #a8ff78; /* fallback for old browsers */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25)), url(../assets/images/group_3.png);
+    background-size: 100% auto;
+    min-height: 200px;
+    position: relative;
   }
 }

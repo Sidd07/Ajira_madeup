@@ -7,11 +7,10 @@ class LandingPage extends Component {
     render() {
         return (
             <div>
-                <div className="site-blocks-cover" >
+                <div className="site-blocks-cover">
                     <div className="text-block">
                         <div>
                             <p className="display-1">Clothes that <span className="text-orange">respire</span></p>
-
                             <p className="display-1"> for man that <span className="text-orange">aspire</span></p>
                             <br />
                             <button className="btn btn-orange mt-20"> Browse Collection </button>
@@ -20,8 +19,8 @@ class LandingPage extends Component {
                 </div>
 
                 <div className="row mt-10 mb-10">
-                    <div className="block-50 mt-10">
-                        <div className="site-blocks-cover" >
+                    <div className="block-50 mt-10 pr-10 sm-p-0">
+                        <div className="site-block-1" >
                             <div className="text-block">
                                 <div>
                                     <p className="display-1"> <span className="text-orange">Summer</span> is here and</p>
@@ -31,14 +30,14 @@ class LandingPage extends Component {
                         </div>
                     </div>
                     <div className="block-50 mt-10">
-                        <div className="image-gallery" >
+                        <div className="image-gallery-1" >
                             <div className="text-block">
                                 <div>
                                     <p className="display-1"><span className="text-orange">wrinkle-free </span>t-shirts</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="image-gallery  mt-10" >
+                        <div className="image-gallery-2 mt-10" >
                             <div className="text-block">
                                 <div>
                                     <p className="display-1"><span className="text-orange">Stain-free </span>Denim shirts</p>
