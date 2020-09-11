@@ -1,38 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './footer.scss';
+import {Link } from "react-router-dom";
 
 
-class Footer extends Component {
-    render() {
+const Footer= (props)=>{
         return (
-            <footer>
-                <div className="footer1">
-                    <div className="text-block">
-                        <div>
-                            <p className="intro-text">GET COUPONS &amp; STYLE GUIDES</p>
-                          
-                            <p className="intro-text-paaragraph"> Subscribe to our Newsletter</p>
-                            <br />
-                                <input type="email" placeholder="Email id" required/><button className="btn btn-orange mt-20"> Subscribe </button>
-                        </div>
-                    </div>
-                    <div className="locate-us"> <i class="fas fa-map-marker-alt"></i>  LOCATE US </div>
-                </div>
+            <footer>              
                 <div className="footer2">
-                    <div class="row">
-                        <div className="block">
+                    <div className="row">
+                        <div className="block-40">
                             <ul className="float-right float-none">
-                                <li> <a>About us </a> </li>
-                                <li> <a>Delivery Information </a> </li>
-                                <li> <a>Returns &amp; Exchange</a> </li>
-                                <li> <a>Technical &amp; Privacy</a> </li>
-                                <li> <a>Order Status</a> </li>
+                                <li> <Link to="/">About us </Link> </li>
+                                <li> <Link to="/">Delivery Information </Link> </li>
+                                <li> <Link to="/">Returns &amp; Exchange</Link> </li>
+                                <li> <Link to="/">Technical &amp; Privacy</Link> </li>
+                                <li> <Link to="/">Order Status</Link> </li>
                             </ul>
                         </div>
-                        <div className="block pt-20">
-                            <a>
+                        <div className="block-40 pt-20">
+                            <Link to="/">
                                 <label className="logo mt-20 mb-20">MADE UP</label>
-                            </a>
+                            </Link>
 
                             <div className="social-media">
                                 <label> Stay in touch with us </label>
@@ -43,7 +31,7 @@ class Footer extends Component {
                             </div>
 
                         </div>
-                        <div className="block  pt-20  text-left text-none">
+                        <div className="block-40  pt-20  text-left text-none">
                             <div className="mb-20">
                                 <label className=" mt-20"><b>Our Corporate Office</b></label>
                                 <br></br>
@@ -63,6 +51,5 @@ class Footer extends Component {
         )
     }
 
-}
 
 export default Footer;

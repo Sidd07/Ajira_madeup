@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import LandingPage from './container/landing';
+
+import Navigation from './componets/navigation/navigation';
 
 
 function App() {
   return (
     <div className="App">
-    <LandingPage/>
+      <Navigation/>
     </div>
   );
 }

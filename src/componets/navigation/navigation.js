@@ -1,36 +1,54 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './navbar.scss';
+import LandingPage from '../../container/landing';
+import Profile from '../../container/profile';
 
 
 class Navigation extends Component {
+    constructor(props) {
+        super(props);
+        
+    }
+    state={
+        openMenu:false
+    }
+
     render() {
         return (
-            <div className="nav">
-                <input type="checkbox" id="check"/>
-                    <label for="check" className="checkbtn">
-                        <i className="fas fa-bars"></i>
+            <Router>
+                <div className="nav">
+                    <input type="checkbox" id="check" onChange={(e)=>{this.setState({openMenu: !this.state.openMenu})}}/>
+                    <label className="checkbtn">
+                        <i className={ this.state.openMenu? "fa fa-times":"fas fa-bars" }></i>
                     </label>
-                
-                    <label className="logo float-left">MADE UP</label>
-                   
+
+                    <Link to="/"> <label className="logo float-left cursor-pointer">MADE UP</label> </Link>
+
                     <ul className="left-nav">
-                        <li><a className="active" href="#">For Me</a></li>
-                        <li><a href="#">Jeans</a></li>
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Trousers</a></li>
-                        <li><a href="#">Joggers</a></li>
-                        <li><a href="#">Shorts</a></li>
-                          
+                        <li><Link to="/" className="active">For Me  </Link> </li>
+                        <li>  <Link to="/"> Jeans  </Link> </li>
+                        <li>  <Link to="/"> Shirts  </Link> </li>
+                        <li>  <Link to="/"> T-Shirts  </Link> </li>
+                        <li>  <Link to="/"> Trousers  </Link> </li>
+                        <li>  <Link to="/"> Joggers  </Link> </li>
+                        <li>  <Link to="/"> Shorts  </Link> </li>
+
                     </ul>
-                    <ul  className="right-nav"> 
-                        <li> <a href="#"><i className="fas fa-search"></i> </a></li>
-                        <li> <a href="#"><i className="fas fa-shopping-cart"></i> </a> </li>
-                        <li className="display-none"> <a href="#"><i className="fas fa-heart"></i> </a> </li>
-                        <li className="display-none"> <a href="#"><i className="fas fa-user"></i> </a> </li>
-                        
+                    <ul className="right-nav">
+                        <li>   <Link to="/"> <i className="fas fa-search"></i>   </Link> </li>
+                        <li className="display-none">   <Link to="/"> <i className="fas fa-shopping-cart"></i>   </Link>  </li>
+                        <li className="display-none">   <Link to="/"> <i className="fas fa-heart"></i>   </Link>  </li>
+                        <li> <Link to="/profile"> <i className="fas fa-user"></i>   </Link>  </li>
+
                     </ul>
-          </div>
+                </div>
+
+                <Route path="/" exact component={LandingPage} />
+                <Route path="/profile" exact component={Profile} />
+
+
+            </Router>
         )
     }
 
