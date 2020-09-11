@@ -19,7 +19,7 @@ class Navigation extends Component {
             <Router>
                 <div className="nav">
                     <input type="checkbox" id="check" onChange={(e)=>{this.setState({openMenu: !this.state.openMenu})}}/>
-                    <label className="checkbtn">
+                    <label htmlFor="check" className="checkbtn">
                         <i className={ this.state.openMenu? "fa fa-times":"fas fa-bars" }></i>
                     </label>
 
