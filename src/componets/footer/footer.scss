@@ -19,6 +19,15 @@
     font-weight: bold;
     border-radius: 4px;
   }
+
+  input{
+    width:250px;
+    margin-right: 10px;
+  }
+  .btn{
+    height: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 .footer2 {
@@ -78,10 +87,15 @@ ul.float-right li {
 
 @media (max-width: 720px) {
   .footer1{
-      .locate-us {
-        left: 42%;
-        right: 100px;
-      }
+    .locate-us {
+      left: 35%;
+      right: 135px;
+    }
+    
+  input{
+    width:100%;
+    margin-right: 10px;
+  }
   }  
   .footer2 {
     .row {
