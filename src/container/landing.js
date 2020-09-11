@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Navigation from "../componets/navigation/navigation";
-import "./css/landing.scss"
 import Footer from '../componets/footer/footer';
 import Products from '../componets/productSlider/products';
 

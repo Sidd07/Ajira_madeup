@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "./css/landing.scss"
 import Footer from '../componets/footer/footer';
 import ProfileForm from '../componets/profileForm/profileForm';
 import Orders from '../componets/orders/orders';
