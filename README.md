@@ -4,7 +4,7 @@
 <p> Created personalised responsive css application styles</p>
 <p> Maintained component based reusable code</p> 
 
-Find application running at aws amplify instance:
+Find application running at aws amplify instance:<br/>
 landing page: https://master.d1h1hfiwc2xlzc.amplifyapp.com/
 <br/>
 Profile page: https://master.d1h1hfiwc2xlzc.amplifyapp.com/profile
