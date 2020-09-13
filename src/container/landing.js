@@ -43,7 +43,7 @@ class LandingPage extends Component {
                                     <p className="display-1"><span className="text-orange">Stain-free </span>Denim shirts</p>
                                 </div>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                 </div>
                 <hr className="hr-text" data-content="LATEST COLLECTIONS" />

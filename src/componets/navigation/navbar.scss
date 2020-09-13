@@ -82,24 +82,29 @@ label.logo{
     position: relative;
     z-index: 999;
   }
-  ul.left-nav{
-    position: fixed;
-    width: 300px;
+  ul.mobile-nav{
+       position: fixed;
+    width: 350px;
     height: 100vh;
     background: #ffffff;
     z-index:10;
     right:-100%;
+    padding:30% 5% !important;
     border-left: 1px solid #DDDDDD;
     text-align: center;
     transition: all .5s;
   }
-  .nav ul.left-nav li{
+  .nav ul.mobile-nav li{
     display: block;
-    margin: 50px 0;
+    margin: 20px 0;
     line-height: 30px;
   }
-  .nav ul li a{
-    font-size: 20px;
+  .nav ul.mobile-nav li hr {
+    margin:40px 0px
+  }
+  ul.mobile-nav li a{
+    text-transform: uppercase;
+    font-size: 17px !important;
   }
   a:hover,a.active{
     background: none;
