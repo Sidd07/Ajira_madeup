@@ -25,7 +25,7 @@ const ProfileForm = (props) => {
             <div className="row"> 
             <div className="block-50 "></div>
             <div className="block-50 ">
-            <button className="btn btn-grey float-right "> Add new address </button>
+            <button className="btn btn-grey float-right "> Save Changes </button>
             </div>
             </div>   
           </form>

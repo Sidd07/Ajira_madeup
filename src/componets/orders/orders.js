@@ -2,12 +2,12 @@ import React from 'react';
 import './orders.scss'
 
 const Orders = (props) => {
-    let productData = props.data;
+    const productData = props.data;
    
     return (
         <div className="border-all sm-border-none sm-border-top mb-20 mr-10 p-20 sm-p-0 sm-m-0">
             <h1 className="width-100 text-left pl-10 sm-display-none"> My Orders</h1>
-            <h3 className="width-100 text-left  lg-disply-none"> Pending Orders</h3>
+            <h3 className="width-100 text-left  lg-display-none"> Pending Orders</h3>
             {productData.map((value, index) => {
                 return (
                 <div className="row p-20 sm-p-0 m-10 sm-m-0" key={index}>

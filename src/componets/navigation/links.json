@@ -1,0 +1,81 @@
+[
+  {  "itemTypes":
+    [
+        {
+        "title":"For Me",
+        "link":"/",
+        "active":true,
+        "image":"mobile-list1"
+        },        
+        {
+        "title":"Jeans",
+        "link":"/","image":"mobile-list2"
+        },
+        {
+        "title":"shirts",
+        "link":"/",
+        "image":"mobile-list3"
+        },
+        {
+        "title":"T-shirts",
+        "link":"/",
+        "image":"mobile-list4"
+        },
+        {
+        "title":"Trousers",
+        "link":"/",
+        "image":"mobile-list5"
+        },
+        {
+        "title":"Joggers",
+        "link":"/",
+        "image":"mobile-list2"
+        },
+        {
+        "title":"Shorts",
+        "link":"/",
+        "image":"mobile-list2"
+        }   
+
+    ]},
+    {"mobileSite1":[
+        {
+        "title":"My Profile",
+        "link":"/profile",
+        "active":true
+        }, 
+        {
+        "title":"My WishList",
+        "link":"/"
+        },
+        {
+        "title":"My orders",
+        "link":"/"
+        },
+        {
+        "title":"My Addresses",
+        "link":"/"
+        }  
+    ]},
+    {
+    "mobileSite2":[
+        {
+        "title":"The Brand",
+        "link":"/",
+        "active":true
+        }, 
+        {
+        "title":"The Made up story",
+        "link":"/"
+        },
+        {
+        "title":"Franchise and suppliends",
+        "link":"/"
+        },
+        {
+        "title":"store locator",
+        "link":"/"
+        }  
+    ]}
+
+]
