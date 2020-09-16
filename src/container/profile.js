@@ -43,7 +43,7 @@ class Profile extends Component {
 
                 </div>
                 <div>
-                    <div className="container mt-20  pr-0">
+                    <div className="container mt-20  pr-0 lg-display-none">
                         <div className="p-20">
                             <ProfileBox />
                         </div>
