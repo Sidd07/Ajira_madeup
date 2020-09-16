@@ -1,0 +1,17 @@
+.order-stat{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: overlay;
+    background: #ffffff;
+    margin-left: -14px;
+    border: 1px solid #d5d5d5;
+}
+
+.present-status{
+    background-color: #333333;
+    background-image:url("../../assets/images/check-icn.png");
+    background-repeat:no-repeat;
+    background-size:40% auto ;
+    background-position: center;    
+}

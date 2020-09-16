@@ -4,14 +4,50 @@
  "dDate":"Sat, Aug 30",
  "pType":"Credit Card Payment",
  "price":"1899",
- "oderStatus":"Pending"    
+ "oderStatus":"Pending",
+ "orderStat": [
+     {
+         "orderstatus": "Order Recieved",
+         "date" :"July 20, 2020"
+     },
+     {
+        "orderstatus": "Order Dispatched",
+        "date" :"July 21, 2020",
+        "present":true
+    }, {
+        "orderstatus": "Order Reach",
+        "date" :"July 22, 2020"
+    },
+    {
+        "orderstatus": "Order Delivered",
+        "date" :null
+    }
+ ]
 },{
     "orderId":" #123456118",
     "pname":"Madeup black Cotton Blend Checkered Slim Fit Shirt",
     "dDate":"Sun, jan 30",
     "pType":"Credit Card Payment",
     "price":"200",
-    "oderStatus":"Pending"    
+    "oderStatus":"Pending",
+    "orderStat": [
+        {
+            "orderstatus": "Order Recieved",
+            "date" :"July 20, 2020",
+            "present":true
+        },
+        {
+           "orderstatus": "Order Dispatched",
+           "date" :"July 21, 2020"
+       }, {
+           "orderstatus": "Order Reach",
+           "date" :"July 22, 2020"
+       },
+       {
+           "orderstatus": "Order Delivered",
+           "date" :null
+       }
+    ]
    },
    {
     "orderId":" #12345678",
@@ -19,5 +55,23 @@
     "dDate":"Sat, Aug 30",
     "pType":"Credit Card Payment",
     "oderStatus":"Pending",
-    "price":"500"
+    "price":"500",
+    "orderStat": [
+        {
+            "orderstatus": "Order Recieved",
+            "date" :"July 20, 2020"
+        },
+        {
+           "orderstatus": "Order Dispatched",
+           "date" :"July 21, 2020"
+       }, {
+           "orderstatus": "Order Reach",
+           "date" :"July 22, 2020"
+       },
+       {
+           "orderstatus": "Order Delivered",
+           "date" :null,
+           "present":true
+       }
+    ]
    }]
